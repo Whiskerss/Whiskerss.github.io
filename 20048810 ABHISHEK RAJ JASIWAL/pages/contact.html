@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Title of the webpage -->
+    <title>My Portfolio | Contact Us</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="My Portfolio Contact">
+    <meta name="keywords" content="Portfolio, Chartered, Accountant, Contact">
+    <meta name="author" content="Abhishek Raj Jaiswal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linking the CSS files to this page -->
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- Linking the javascript file to this page -->
+    <script src="../script.js"></script>
+
+    <!-- Internal CSS -->
+    <style>
+        .button {
+            width: 180px;
+            padding: 10px 5px 10px 5px;
+            background-color: #fff4ea;
+            float: right;
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Container to hold other components -->
+    <div class="container">
+
+        <!-- Header of the Page -->
+        <header> <a href="../home.html"><img src="../images/calogo2.png"></a>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="../home.html">HOME</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="research.html">RESEARCH</a></li>
+                    <li> <a class="active" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Top section of the Contact Page -->
+        <section class="contact_top">
+
+            <!-- Description of Contact Page -->
+            <div class="contact">
+                <div class="text_column">
+                    <h2 style="text-align: center; font-size:30px; line-height:1.2;">Contact Us <br> We are here to
+                        help!
+                    </h2>
+                    <p style="font-size:20px;"> Having problem with your taxes? Anything related to your financial
+                        problem,
+                        we are here ready to
+                        help. We can take care of all your personal as well as business related financial problems.</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact">
+                <h1 style="padding-left: 180px; font-size:30px;">Get In Touch</h1>
+
+                <!-- 
+                -- Form tag is used to create a form
+                -- validateContact() function runs when submit button is clicked
+                -->
+                <form name="contactform" onsubmit="return validateContact()">
+                    <table>
+                        <tr>
+                            <td><label for="fname">First Name:</label></td>
+                            <td><input type="text" placeholder="First Name*" id="fname" name="fname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname">Last Name:</label></td>
+                            <td><input type="text" placeholder="Last Name" id="lname" name="lname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email address:</label></td>
+                            <td><input type="email" placeholder="Email Address*" id="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Phone Number:</label></td>
+                            <td><input type="number" placeholder="Phone Number" id="phone" name="phone"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Your message:</label></td>
+                            </td>
+                            <!-- textarea tag from message input -->
+                            <td><textarea type="message" placeholder="Your message*" id="message"
+                                    name="message"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="button" type="submit" value="SUBMIT"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <!-- Banner section for newsletter subscription -->
+        <section class="banner">
+            <p class="heading">SUBSCRIBE TO OUR <br> NEWSLETTER <br> FOR NEWS & UPDATES</p>
+
+            <!-- 
+                -- Form tag is used to create a form
+                -- validateNews() function runs when submit button is clicked
+             -->
+            <form class="news_form" name="newsform" onsubmit="return validateNews()">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" placeholder="Full Name" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email address:</label></td>
+                        <td><input type="email" placeholder="Email Address" id="email" emailname="email"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="submit" value="SUBSCRIBE"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </div>
+    <!-- Footer of the page -->
+    <footer>
+        <p>&copy; 2021 - All Rights Reserved</p>
+        <a href="https://www.facebook.com/ravi.jaisawal.921"><img class="smalllogo" src="../images/facelogo.png"
+                alt="Facebook"></a>
+        <a href="https://www.instagram.com/ravi_jaiswl/"><img class="smalllogo" src="../images/instalogo.png"></a>
+        <a href="https://www.linkedin.com/in/ca-ravi-jaisawal/"><img class="smalllogo" src="../images/linklogo.png"></a>
+    </footer>
+</body>

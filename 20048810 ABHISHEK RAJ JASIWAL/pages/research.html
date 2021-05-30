@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Title of the webpage -->
+    <title>My Portfolio | Research</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="My Portfolio Research">
+    <meta name="keywords" content="Portfolio, Chartered, Accountant, Research">
+    <meta name="author" content="Abhishek Raj Jaiswal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linking the CSS files to this page -->
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- Linking the javascript file to this page -->
+    <script src="../script.js" type="text/javascript"></script>
+
+    <!-- Internal CSS -->
+    <style>
+        .content {
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        // Plays the video when click on them
+        function play() {
+            var vid = document.getElementById("video")
+            if (vid.paused == true) {
+                vid.play();
+            }
+            if (vid.paused == false) {
+                vid.pause();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Container to hold other components -->
+    <div class="container">
+
+        <!-- Header of the Page -->
+        <header> <a href="../home.html"><img src="../images/calogo2.png"></a>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="../home.html">HOME</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a class="active" href="research.html">RESEARCH</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Division for actual references -->
+        <section class="references">
+            <h1 style="font-size:30px;">Research</h1>
+            <p class="content">I had no idea what a portfolio website should look like before creating this one. That's
+                why I needed to do some research and find some examples. After doing some research, I found some
+                websites that inspired me to create something similar. Here are the websites from which I drew
+                inspiration.</p>
+            <br>
+
+            <h2>1. Navigation Bar</h2>
+            <img src="../images/ref1.png" alt="Navigation Reference">
+            <img src="../images/imple1.png" alt="Navigation Implementation">
+            <p class="content">The navigation bar I have made in my website was inspired from <a class="link"
+                    href="https://underbelly.is/writing-about">Underbelly.is</a>. As you can see there are some
+                similarities such as the logo and the orientation of the navigation bar. As hard as I tried, i could not
+                make the navigation bar as good as theirs. I included a background colour which I think fits better in
+                my website.</p>
+            <br>
+
+            <h2>2. Home Page</h2>
+            <!-- 
+                Video tag used to embed videos
+                Video plays on clicking them
+             -->
+            <video id="video" onclick="play()" autoplay>
+                <source src="../video/ref2.mp4" type="video/mp4">
+            </video>
+
+            <video id="video" onclick="play()">
+                <source src="../video/imple2.mp4" type="video/mp4">
+            </video>
+
+            <p class="content"> The big background in the homepage in my website was inspired by <a class="link"
+                    href="https://yanick.co/">yanick.co</a>. The big background with a logo in the middle looks quite
+                good in the website. Although they both look similar, there are quite some differences. The
+                backgorund in my website is parallax and the logo is very much different. You can see the differences by
+                clicking on the videos to play them. </p>
+            <br>
+
+            <h2>3. Newsletter Banner</h2>
+            <img src="../images/ref3.png" alt="Newsletter Reference">
+            <img src="../images/imple3.png" alt="Navigation Implementation">
+            <p class="content">This Newsletter banner from <a class="link"
+                    href="https://nordiceye.com/">nordiceye.com</a> immediately caught my attention when I first visited
+                their site. I found it as a very creative way to catch attention and tried to make one for my own
+                website. Although my form as quite some differences in terms of form validation and the way of
+                presenting error message is quite different as well. </p>
+            <br>
+
+            <h2>4. Copyright Column</h2>
+            <img src="../images/ref4.png" alt="Copyright Reference">
+            <img src="../images/imple4.png" alt="Copyright Implementation">
+            <p class="content">The idea of putting social media icons in the footer section came from <a class="link"
+                    href="https://toyfight.co/">toyfight.co</a>. It is a great way to promote one's social media
+                accounts and makes them easily accessible to the visitors.</p>
+            <br>
+
+            <h2>5. Contact Form</h2>
+            <img src="../images/ref5.png" alt="Conact From Reference">
+            <img src="../images/imple5.png" alt="Contact Form Implementation">
+            <p class="content">The contact form in <a class="link"
+                    href="https://www.ashevilleluxuryelopements.com/contact-us/">ashevilleluxuryelopements.com</a>
+                looked very attractive to me as it is simple yet looks very good to the eyes. I took a very liking to
+                this idea and tried to make a contact page of my own in my website. It is a great way to get feedback
+                from visitors and clients. </p>
+            <br>
+        </section>
+    </div>
+
+    <!-- Footer of the Page -->
+    <footer>
+        <p>&copy; 2021 - All Rights Reserved</p>
+        <a href="https://www.facebook.com/ravi.jaisawal.921"><img class="smalllogo" src="../images/facelogo.png"
+                alt="Facebook"></a>
+        <a href="https://www.instagram.com/ravi_jaiswl/"><img class="smalllogo" src="../images/instalogo.png"></a>
+        <a href="https://www.linkedin.com/in/ca-ravi-jaisawal/"><img class="smalllogo" src="../images/linklogo.png"></a>
+    </footer>
+</body>

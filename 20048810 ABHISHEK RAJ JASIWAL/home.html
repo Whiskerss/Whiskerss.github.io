@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Title of the webpage -->
+    <title>My Portfolio | HOME</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="My Portfolio Home">
+    <meta name="keywords" content="Portfolio, Chartered, Accountant">
+    <meta name="author" content="Abhishek Raj Jaiswal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking the CSS file to this page -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Linking the javascript file to this page -->
+    <script src="script.js"></script>
+
+    <!-- Internal CSS -->
+    <style>
+        .hero {
+            background-image: url(images/backblur.png);
+            background-size: cover;
+            padding-top: 150px;
+            padding-bottom: 350px;
+        }
+
+        .hero img {
+            display: block;
+            width: 24%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 150px;
+            transition: transform .5s;
+        }
+
+        .hero img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container to hold other components -->
+    <div class="container">
+
+        <!-- Header of the page -->
+        <header> <a href="home.html"><img src="images/calogo2.png"></a>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a class="active" href="home.html">HOME</a></li>
+                    <!-- Active class to display the cative page -->
+                    <li><a href="pages/cv.html">CV</a></li>
+                    <li><a href="pages/blog.html">BLOG</a></li>
+                    <li><a href="pages/research.html">RESEARCH</a></li>
+                    <li> <a href="pages/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero parallax">
+            <img src="images/herologo.png">
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="thumbnail">
+                <img src="images/taxexpert.png">
+                <h4>Tax Expert</h4>
+                <p>Handeling tax returns with any type of account is easier with us.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="images/incorporations.png">
+                <h4>Incorporations</h4>
+                <p>Familiar to reputed corporations with high workload.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="images/advice.png">
+                <h4>Trusted Advice</h4>
+                <p>Have queries? We are more than happy to assist.</p>
+            </div>
+        </section>
+
+        <!-- Banner section for newsletter subscription -->
+        <section class="banner">
+            <p class="heading">SUBSCRIBE TO OUR <br> NEWSLETTER <br> FOR NEWS & UPDATES</p>
+
+            <!-- 
+                -- Form tag is used to create a form
+                -- validateNews() function runs when submit button is clicked
+             -->
+            <form class="news_form" name="newsform" onsubmit="return validateNews()">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" placeholder="Full Name" id="name" name="name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email address:</label></td>
+                        <td><input type="email" placeholder="Email Address" id="email" emailname="email"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="button" type="submit" value="SUBSCRIBE"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+
+            <div class="about_column">
+                <h3>ABOUT</h3>
+                <img src="images/about1.png" alt="Ravi Jaiswal" class="card">
+                <p>I am a Chartered Accountant based on Kathmandu, Nepal. With +5 years of experience, I am a freelancer
+                    working on different projects. I like to work with challenging fields through which I can use my
+                    skills to it's maximum.</p>
+            </div>
+
+            <!-- divided into two about_colums -->
+
+            <div class="about_column">
+                <h3>LOCATION</h3>
+
+                <!-- iframe to embed google map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220.83446392661654!2d85.31586995257773!3d27.675531398001556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cc84462b87%3A0x806be4cd11d4f233!2sYapa%20Bhawan!5e0!3m2!1sen!2snp!4v1621851751141!5m2!1sen!2snp"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+                <p>Although you can reach us through the internet quiet easily, our office is located in Pulchowk of
+                    Kathmandu, Nepal. Please do pay us a visit to learn more about us. Our management is more than happy
+                    to help you.</p>
+            </div>
+        </section>
+
+        <!-- Footer of the page -->
+        <footer style="width:100%;">
+            <p>&copy; 2021 - All Rights Reserved</p>
+
+            <!-- Social Media Icons -->
+            <a href="https://www.facebook.com/ravi.jaisawal.921"><img class="smalllogo" src="images/facelogo.png"
+                    alt="Facebook"></a>
+
+            <a href="https://www.instagram.com/ravi_jaiswl/"><img class="smalllogo" src="images/instalogo.png"></a>
+
+            <a href="https://www.linkedin.com/in/ca-ravi-jaisawal/"><img class="smalllogo"
+                    src="images/linklogo.png"></a>
+        </footer>
+    </div>
+</body>
+
+</html>
